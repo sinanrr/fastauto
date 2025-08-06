@@ -3,176 +3,725 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAST OTO YIKAMA</title>
+    <meta
+      name="description"
+      content="Antalya'da profesyonel oto yıkama hizmetleri. Dış yıkama, iç temizlik, detaylı temizlik, pasta cila ve ozon dezenfekte hizmetleri."
+    />
+    <meta
+      name="keywords"
+      content="oto yıkama, araç temizliği, Antalya oto yıkama, araç yıkama, detaylı temizlik"
+    />
+    <title>FAST OTO YIKAMA | Antalya Profesyonel Oto Temizlik Hizmetleri</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Head içine -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap\"
-    rel=\"stylesheet\">
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
-  <div class="whatsapp-float">
-    <a href="https://wa.me/905424512494" target="_blank">
-      <img src="whatsapp.jpg" alt="WhatsApp" />
-    </a>
-  </div>
 
   <body>
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+      <a
+        href="https://wa.me/905424512494"
+        target="_blank"
+        aria-label="WhatsApp iletişim"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="En üste dön">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <header class="header">
-      <img src="logo1.png" width="60px" />
-      <div class="title">FAST OTO YIKAMA</div>
-      <div class="menu-icon">&#9776;</div>
-      <nav class="nav-links">
-        <a href="#anasayfa">Anasayfa</a>
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#fiyatlar">Fiyatlar</a>
-        <a href="#iletisim">İletişim</a>
-        <a href="#yorumlar">Yorumlar</a>
-      </nav>
+      <div class="header-container">
+        <div class="logo-container">
+          <img
+            src="logo1.png"
+            width="60px"
+            alt="Fast Oto Yıkama Logo"
+            loading="lazy"
+          />
+          <div class="title">FAST OTO YIKAMA</div>
+        </div>
+
+        <div class="menu-icon" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="nav-links" id="mainNav">
+          <a href="#anasayfa" class="nav-link"
+            ><i class="fas fa-home"></i> Anasayfa</a
+          >
+          <a href="#hizmetler" class="nav-link"
+            ><i class="fas fa-concierge-bell"></i> Hizmetler</a
+          >
+          <a href="#fiyatlar" class="nav-link"
+            ><i class="fas fa-tags"></i> Fiyatlar</a
+          >
+          <a href="#hakkimizda" class="nav-link"
+            ><i class="fas fa-info-circle"></i> Hakkımızda</a
+          >
+          <a href="#yorumlar" class="nav-link"
+            ><i class="fas fa-comments"></i> Yorumlar</a
+          >
+          <a href="#iletisim" class="nav-link"
+            ><i class="fas fa-phone-alt"></i> İletişim</a
+          >
+        </nav>
+      </div>
     </header>
 
-    <section id="anasayfa" class="hero fade-in">
-      <img src="carwah.png" alt="Araç" />
-      <a href="#iletisim" class="btn">HEMEN İLETİŞİME GEÇ</a>
-    </section>
-
-    <section id="hizmetler" class="fade-in">
-      <h2>HİZMETLER</h2>
-      <div class="hizmetler-listesi">
-        <div class="hizmet-karti">Dış Yıkama</div>
-        <div class="hizmet-karti">İç Temizlik</div>
-        <div class="hizmet-karti">Detaylı Temizlik</div>
-        <div class="hizmet-karti">Pasta Cila</div>
-        <div class="hizmet-karti">Ozonla Dezenfekte</div>
-      </div>
-    </section>
-
-    <section id="fiyatlar" class="fade-in">
-      <h2>FİYATLAR</h2>
-      <div class="fiyat-kartlari">
-        <div class="fiyat-karti">
-          Dış Yıkama
-          <span>100₺</span>
-        </div>
-        <div class="fiyat-karti">
-          İç Temizlik
-          <span>0₺</span>
-        </div>
-        <div class="fiyat-karti">
-          Detaylı Temizlik
-          <span>250₺</span>
-        </div>
-        <div class="fiyat-karti">
-          Pasta Cila
-          <span>300₺</span>
-        </div>
-        <div class="fiyat-karti">
-          Ozonla Dezenfekte
-          <span>200₺</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="hakkimizda" class="fade-in">
-      <h2>HAKKIMIZDA</h2>
-      <p>
-        Uzman ekibimizle oto yıkamada kaliteyi ayağınıza getiriyoruz. Deneyim ve
-        müşteri memnuniyeti önceliğimizdir.
-      </p>
-    </section>
-
-    <section id="iletisim" class="fade-in">
-      <h2>İLETİŞİM</h2>
-      <p>Adres: Dutlubahçe, 747. Sk., 07010 Muratpaşa/Antalya</p>
-      <p>Tel: 0542 451 24 94</p>
-      <p>Email: info@fastotoyikama.com</p>
-      <div class="icons">
-        <a href="mailto:fastauto@gmail.com?subject=subject text"
-          ><img src="eposta.png" alt="Eposta"
-        /></a>
-        <a href="#"><img src="whatsapp.jpg" alt="WhatsApp" /></a>
-      </div>
-    </section>
-    <section id="yorumlar" class="fade-in">
-      <h2>YORUMLAR</h2>
-      <div class="yorum-karti">
-        <div class="yorum-ust">
-          <img src="kaan.png" alt="Profil" class="profil-resmi" />
-          <div>
-            <strong>Kaan Bostanoğlu</strong>
-            <p class="yorum-tarih">4 ay önce</p>
-            <div class="yildizlar">★★★★★</div>
+    <main>
+      <section id="anasayfa" class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Antalya'nın En Kaliteli Oto Yıkama Hizmeti</h1>
+          <p class="hero-subtitle">
+            Profesyonel ekip, kaliteli malzemeler ve müşteri memnuniyeti odaklı
+            hizmet
+          </p>
+          <div class="cta-buttons">
+            <a href="#iletisim" class="btn btn-primary">HEMEN RANDEVU AL</a>
+            <a href="tel:05424512494" class="btn btn-secondary"
+              ><i class="fas fa-phone"></i> BİZİ ARAYIN</a
+            >
           </div>
         </div>
-        <p class="yorum-icerik">
-          İşletme sahibi ilgili ve çalışanlar deneyimli. Araca seramik ve detay
-          uygulaması yapıldı, aynı gün aldım aracımı ve on numara işçilik
-          yapılmıştı. Teşekkürler firma sahibi Halil Bey.
-        </p>
-        <img src="unnamed.jpg" alt="Yorum Fotoğrafı" class="yorum-foto" />
-      </div>
-      <div class="yorum-karti">
-        <div class="yorum-ust">
-          <img src="yusuf.png" alt="Profil" class="profil-resmi" />
-          <div>
-            <strong>Yusuf Benli</strong>
-            <p class="yorum-tarih">4 ay önce</p>
-            <div class="yildizlar">★★★★★</div>
-          </div>
+        <div class="hero-image">
+          <img
+            src="carwah.png"
+            alt="Temizlenmiş araç"
+            loading="lazy"
+            class="zoom-in"
+          />
         </div>
-        <p class="yorum-icerik">
-          Arkadaşlar herkese tavsiye ederim yeni suv araç aldim seramik kaplama
-          yaptirdim çok memnun kaldım fiyat performansi ve işçilikleri çok iyi
-          ilgi ve alakaları için teşekkür ederim herkese tavsiye ederim....
-        </p>
-      </div>
-      <div class="yorum-karti">
-        <div class="yorum-ust">
-          <img src="huseyim.png" alt="Profil" class="profil-resmi" />
-          <div>
-            <strong>Hüseyin Pehlivanoğlu</strong>
-            <p class="yorum-tarih">3 ay önce</p>
-            <div class="yildizlar">★★★★★</div>
-          </div>
-        </div>
-        <p class="yorum-icerik">
-          Deneyimli yıkama temiz titiz bir şekilde aracım yıkandı sorunsuz bir
-          sekilde tavsiye ederim camları sirkeli su ile silinmesi bile
-          farklılık😉 …
-        </p>
-      </div>
-      <div class="yorum-karti">
-        <div class="yorum-ust">
-          <img src="samet.png" alt="Profil" class="profil-resmi" />
-          <div>
-            <strong>Samet Peltek</strong>
-            <p class="yorum-tarih">4 ay önce</p>
-            <div class="yildizlar">★★★★★</div>
-          </div>
-        </div>
-        <p class="yorum-icerik">
-          Arabamı yıkattım çok memnun kaldım hepsinin eline saglık çok güzel de
-          karşıladılar herkeze tavsiye ederim
-        </p>
-      </div>
-      <div class="yorum-karti">
-        <div class="yorum-ust">
-          <img src="ramazan.png" alt="Profil" class="profil-resmi" />
-          <div>
-            <strong>Ramazan Özel</strong>
-            <p class="yorum-tarih">6 ay önce</p>
-            <div class="yildizlar">★★★★★</div>
-          </div>
-        </div>
-        <p class="yorum-icerik">
-          Tecrübeli ekip ,kaliteli malzeme ve halil bey ‘İn tizizliğiyle çok
-          kaliteli bir işletme çıkmış Aracım ilk günki temizliğe kavuştu
-          teşekkürler
-        </p>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <p>&copy; 2025 FAST OTO YIKAMA - Tüm hakları saklıdır.</p>
+      <section id="hizmetler" class="services-section">
+        <div class="section-header">
+          <h2>HİZMETLERİMİZ</h2>
+          <p class="section-subtitle">
+            Aracınız için en kaliteli temizlik çözümleri
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-car"></i>
+            </div>
+            <h3>Dış Yıkama</h3>
+            <p>
+              Aracınızın dış yüzeyinin profesyonel şampuanlarla yıkanması ve
+              kurulanması
+            </p>
+            <a href="#iletisim" class="service-link"
+              >Detaylı Bilgi <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3>İç Temizlik</h3>
+            <p>
+              Koltuk, halı, torpido ve tüm iç yüzeylerin derinlemesine temizliği
+            </p>
+            <a href="#iletisim" class="service-link"
+              >Detaylı Bilgi <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-spray-can"></i>
+            </div>
+            <h3>Detaylı Temizlik</h3>
+            <p>
+              İç ve dış tüm yüzeylerin detaylı temizliği ve koruyucu uygulamalar
+            </p>
+            <a href="#iletisim" class="service-link"
+              >Detaylı Bilgi <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3>Pasta Cila</h3>
+            <p>
+              Aracınızın boyasını koruyan ve parlaklık sağlayan profesyonel
+              pasta cila
+            </p>
+            <a href="#iletisim" class="service-link"
+              >Detaylı Bilgi <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <h3>Ozonla Dezenfekte</h3>
+            <p>
+              Klima kanalları ve iç mekanda bakteri ve kötü kokulara karşı ozon
+              uygulaması
+            </p>
+            <a href="#iletisim" class="service-link"
+              >Detaylı Bilgi <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Seramik Kaplama</h3>
+            <p>
+              Aracınızın boyasını uzun süre koruyan profesyonel seramik kaplama
+            </p>
+            <a href="#iletisim" class="service-link"
+              >Detaylı Bilgi <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="fiyatlar" class="pricing-section">
+        <div class="section-header">
+          <h2>FİYAT LİSTEMİZ</h2>
+          <p class="section-subtitle">
+            Uygun fiyatlar ve kaliteli hizmet garantisi
+          </p>
+        </div>
+
+        <div class="pricing-tabs">
+          <button class="pricing-tab active" data-category="basic">
+            Temel Hizmetler
+          </button>
+          <button class="pricing-tab" data-category="premium">
+            Premium Hizmetler
+          </button>
+          <button class="pricing-tab" data-category="packages">
+            Paket Hizmetler
+          </button>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card" data-category="basic">
+            <div class="price-header">
+              <h3>Dış Yıkama</h3>
+              <div class="price">100₺</div>
+            </div>
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> Profesyonel şampuanlama</li>
+              <li><i class="fas fa-check"></i> Jant temizliği</li>
+              <li><i class="fas fa-check"></i> Kurulama</li>
+              <li><i class="fas fa-check"></i> Cam silme</li>
+            </ul>
+            <a href="#iletisim" class="price-button">Hemen Randevu Al</a>
+          </div>
+
+          <div class="price-card" data-category="basic">
+            <div class="price-header">
+              <h3>İç Temizlik</h3>
+              <div class="price">150₺</div>
+            </div>
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> Koltuk temizliği</li>
+              <li><i class="fas fa-check"></i> Halı yıkama</li>
+              <li><i class="fas fa-check"></i> Torpido düzenleme</li>
+              <li><i class="fas fa-check"></i> Kokulu dezenfektan</li>
+            </ul>
+            <a href="#iletisim" class="price-button">Hemen Randevu Al</a>
+          </div>
+
+          <div class="price-card featured" data-category="packages">
+            <div class="price-header">
+              <h3>Standart Paket</h3>
+              <div class="price">200₺</div>
+              <div class="save-badge">50₺ Tasarruf</div>
+            </div>
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> Dış yıkama</li>
+              <li><i class="fas fa-check"></i> İç temizlik</li>
+              <li><i class="fas fa-check"></i> Jant parlatma</li>
+              <li><i class="fas fa-check"></i> Lastik bakımı</li>
+            </ul>
+            <a href="#iletisim" class="price-button">Hemen Randevu Al</a>
+          </div>
+
+          <div class="price-card" data-category="premium">
+            <div class="price-header">
+              <h3>Pasta Cila</h3>
+              <div class="price">300₺</div>
+            </div>
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> Boya düzeltme</li>
+              <li><i class="fas fa-check"></i> 3 aşamalı cila</li>
+              <li><i class="fas fa-check"></i> 6 ay koruma</li>
+              <li><i class="fas fa-check"></i> Cam temizliği</li>
+            </ul>
+            <a href="#iletisim" class="price-button">Hemen Randevu Al</a>
+          </div>
+
+          <div class="price-card" data-category="premium">
+            <div class="price-header">
+              <h3>Ozon Dezenfekte</h3>
+              <div class="price">200₺</div>
+            </div>
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> Klima temizliği</li>
+              <li><i class="fas fa-check"></i> Bakteri arındırma</li>
+              <li><i class="fas fa-check"></i> Kötü koku giderme</li>
+              <li><i class="fas fa-check"></i> 30 dakika uygulama</li>
+            </ul>
+            <a href="#iletisim" class="price-button">Hemen Randevu Al</a>
+          </div>
+
+          <div class="price-card featured" data-category="packages">
+            <div class="price-header">
+              <h3>Premium Paket</h3>
+              <div class="price">450₺</div>
+              <div class="save-badge">100₺ Tasarruf</div>
+            </div>
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> Dış yıkama</li>
+              <li><i class="fas fa-check"></i> Detaylı iç temizlik</li>
+              <li><i class="fas fa-check"></i> Pasta cila</li>
+              <li><i class="fas fa-check"></i> Ozon dezenfekte</li>
+            </ul>
+            <a href="#iletisim" class="price-button">Hemen Randevu Al</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="hakkimizda" class="about-section">
+        <div class="about-container">
+          <div class="about-content">
+            <div class="section-header">
+              <h2>HAKKIMIZDA</h2>
+              <p class="section-subtitle">Kalite ve güvenin adresi</p>
+            </div>
+
+            <div class="about-text">
+              <p>
+                2015 yılından bu yana Antalya'da hizmet veren FAST OTO YIKAMA,
+                müşteri memnuniyetini ön planda tutarak kaliteli ve uygun
+                fiyatlı hizmet sunmaktadır.
+              </p>
+
+              <div class="about-features">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h4>8 Yıllık Deneyim</h4>
+                    <p>Yılların verdiği tecrübeyle en iyi hizmet</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h4>5000+ Mutlu Müşteri</h4>
+                    <p>Memnuniyet odaklı hizmet anlayışı</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Kaliteli Malzemeler</h4>
+                    <p>Aracınıza zarar vermeyen premium ürünler</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="team.jpg"
+              alt="Fast Oto Yıkama Ekibi"
+              loading="lazy"
+              class="about-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="yorumlar" class="testimonials-section">
+        <div class="section-header">
+          <h2>MÜŞTERİ YORUMLARI</h2>
+          <p class="section-subtitle">Müşterilerimiz bizim için ne dedi?</p>
+        </div>
+
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="kaan.png" alt="Kaan Bostanoğlu" class="client-img" />
+              <div class="client-info">
+                <h4>Kaan Bostanoğlu</h4>
+                <div class="client-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "İşletme sahibi ilgili ve çalışanlar deneyimli. Araca seramik ve
+              detay uygulaması yapıldı, aynı gün aldım aracımı ve on numara
+              işçilik yapılmıştı. Teşekkürler firma sahibi Halil Bey."
+            </p>
+            <div class="testimonial-date">4 ay önce</div>
+            <div class="testimonial-images">
+              <img src="unnamed.jpg" alt="Yapılan iş örneği" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="yusuf.png" alt="Yusuf Benli" class="client-img" />
+              <div class="client-info">
+                <h4>Yusuf Benli</h4>
+                <div class="client-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Arkadaşlar herkese tavsiye ederim yeni suv araç aldim seramik
+              kaplama yaptirdim çok memnun kaldım fiyat performansi ve
+              işçilikleri çok iyi ilgi ve alakaları için teşekkür ederim herkese
+              tavsiye ederim...."
+            </p>
+            <div class="testimonial-date">4 ay önce</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img
+                src="huseyim.png"
+                alt="Hüseyin Pehlivanoğlu"
+                class="client-img"
+              />
+              <div class="client-info">
+                <h4>Hüseyin Pehlivanoğlu</h4>
+                <div class="client-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Deneyimli yıkama temiz titiz bir şekilde aracım yıkandı sorunsuz
+              bir sekilde tavsiye ederim camları sirkeli su ile silinmesi bile
+              farklılık 😉 …"
+            </p>
+            <div class="testimonial-date">3 ay önce</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="samet.png" alt="Samet Peltek" class="client-img" />
+              <div class="client-info">
+                <h4>Samet Peltek</h4>
+                <div class="client-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Arabamı yıkattım çok memnun kaldım hepsinin eline saglık çok
+              güzel de karşıladılar herkeze tavsiye ederim"
+            </p>
+            <div class="testimonial-date">4 ay önce</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="ramazan.png" alt="Ramazan Özel" class="client-img" />
+              <div class="client-info">
+                <h4>Ramazan Özel</h4>
+                <div class="client-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Tecrübeli ekip ,kaliteli malzeme ve halil bey'in titizliğiyle çok
+              kaliteli bir işletme çıkmış Aracım ilk günki temizliğe kavuştu
+              teşekkürler"
+            </p>
+            <div class="testimonial-date">6 ay önce</div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots"></div>
+          <button class="slider-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="iletisim" class="contact-section">
+        <div class="section-header">
+          <h2>BİZE ULAŞIN</h2>
+          <p class="section-subtitle">Randevu ve bilgi için iletişime geçin</p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-text">
+                <h4>Adres</h4>
+                <p>Dutlubahçe, 747. Sk., 07010 Muratpaşa/Antalya</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-text">
+                <h4>Telefon</h4>
+                <p><a href="tel:05424512494">0542 451 24 94</a></p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-text">
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:info@fastotoyikama.com"
+                    >info@fastotoyikama.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-text">
+                <h4>Çalışma Saatleri</h4>
+                <p>
+                  Pazartesi - Cumartesi: 08:00 - 19:00<br />Pazar: 10:00 - 17:00
+                </p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://wa.me/905424512494"
+                target="_blank"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" target="_blank" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" target="_blank" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="mailto:info@fastotoyikama.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="appointmentForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Adınız Soyadınız"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Telefon Numaranız"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Adresiniz"
+                />
+              </div>
+
+              <div class="form-group">
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Hizmet Seçiniz</option>
+                  <option value="dis-yikama">Dış Yıkama</option>
+                  <option value="ic-temizlik">İç Temizlik</option>
+                  <option value="detayli-temizlik">Detaylı Temizlik</option>
+                  <option value="pasta-cila">Pasta Cila</option>
+                  <option value="ozon-dezenfekte">Ozon Dezenfekte</option>
+                  <option value="seramik-kaplama">Seramik Kaplama</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <input type="date" id="date" name="date" required />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Eklemek istedikleriniz..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">RANDEVU AL</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12769.123456789012!2d30.12345678901234!3d36.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDA3JzI0LjQiTiAzMMKwMDcnMjQuNCJF!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="logo1.png"
+            alt="Fast Oto Yıkama Logo"
+            width="80px"
+            loading="lazy"
+          />
+          <h3>FAST OTO YIKAMA</h3>
+          <p>Profesyonel Araç Temizlik Hizmetleri</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Hızlı Linkler</h4>
+          <ul>
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#fiyatlar">Fiyatlar</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Hizmetlerimiz</h4>
+          <ul>
+            <li><a href="#hizmetler">Dış Yıkama</a></li>
+            <li><a href="#hizmetler">İç Temizlik</a></li>
+            <li><a href="#hizmetler">Detaylı Temizlik</a></li>
+            <li><a href="#hizmetler">Pasta Cila</a></li>
+            <li><a href="#hizmetler">Ozon Dezenfekte</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>İletişim</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Dutlubahçe, 747. Sk.,
+            Muratpaşa/Antalya
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:05424512494">0542 451 24 94</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@fastotoyikama.com">info@fastotoyikama.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2023 FAST OTO YIKAMA - Tüm hakları saklıdır.</p>
+        <div class="footer-social">
+          <a
+            href="https://wa.me/905424512494"
+            target="_blank"
+            aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="#" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" target="_blank" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
